@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## App architecture
+- Keep the marketplace shell and demo state in a root provider so navigation, cart and role changes remain consistent between pages.
+- Treat prototype accounts, cart and seller metrics as demonstration-only client state; never imply real sign-in or completed purchases.
+- Keep catalog filtering and role visibility in pure browser-safe helpers with concrete rule tests.
+- Use leaf metadata and separate content routes so every navigation item has a real destination.

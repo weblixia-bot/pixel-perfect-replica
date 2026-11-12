@@ -9,6 +9,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        purchase: "bg-highlight text-highlight-foreground shadow-sm hover:bg-highlight/90 font-semibold",
+        nav: "text-primary-foreground hover:bg-primary-foreground/10 rounded-sm shadow-none",
         default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
